@@ -6,12 +6,7 @@ function Questions({ questions = [] }) {
     <section className="container">
       <h1>Questions</h1>
       {questions.map((question) => {
-        return (
-          <SingleQuestion
-            key={question.id}
-            question={question}
-          ></SingleQuestion>
-        );
+        return <SingleQuestion key={question.id} question={question} />;
       })}
     </section>
   );
